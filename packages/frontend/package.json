@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.10",
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/next-plugin": "^2.1.1",
+    "@vanilla-extract/recipes": "^0.2.5",
+    "@vanilla-extract/sprinkles": "^1.5.0",
+    "chroma-js": "^2.4.2",
+    "clsx": "^1.2.1",
+    "focus-visible": "^5.2.0",
+    "graphql": "^16.6.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.21",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "typescript": "^4.8.4"
+  }
+}

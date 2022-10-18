@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "tsc-watch --onCompilationComplete \"node -r cfs-dotenv/config ./build/src/index.js --trace-warnings\"",
+    "watch-node": "nodemon -r --delay 500ms cfs-dotenv/config ./build/src/index.js",
+    "watch-ts": "tsc -w --onSuccess \"node ./build/src/index.js\""
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.1.0",
+    "cfs-dotenv": "^0.1.7",
+    "fastify": "^4.6.0",
+    "graphql": "^16.6.0",
+    "knex": "^2.3.0",
+    "mercurius": "^11.0.0",
+    "mercurius-codegen": "^4.0.1",
+    "objection": "^3.0.1",
+    "pg": "^8.8.0",
+    "tsc-watch": "^5.0.3",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.1.0",
+    "typescript": "^4.0.2"
+  }
+}
